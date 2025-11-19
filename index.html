@@ -1,11 +1,182 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-  <title>Mikayla Singh | Aerospace Engineering Portfolio</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mikayla Ehresmann-Singh | Aerospace Engineer</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/styles.css">
+
+  <!-- Favicons (optional) -->
+  <meta name="theme-color" content="#0b0f14" />
 </head>
 
 <body>
-  <h1>Welcome to my Aerospace Portfolio</h1>
-  <p>This site is under construction — more projects coming soon!</p>
+  <div id="app">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="logo">MES</div>
+        <div class="title">Mikayla Ehresmann-Singh</div>
+        <div class="subtitle">Aerospace Engineer</div>
+      </div>
+
+      <nav class="nav">
+        <a href="#hero" class="nav-link active">Home</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="socials">
+        <a href="https://github.com/mkesingh" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/mikayla-singh" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:your.email@example.com">Email</a>
+      </div>
+
+      <div class="smallprint">© <span id="year"></span> Mikayla Ehresmann-Singh</div>
+    </aside>
+
+    <!-- Main content -->
+    <main class="main">
+      <header class="topbar">
+        <button id="menuToggle" class="menu-btn" aria-label="Toggle menu">☰</button>
+      </header>
+
+      <section id="hero" class="hero">
+        <h1>Mikayla Ehresmann-Singh</h1>
+        <p class="lead">Aerospace Engineer — Propulsion, Hypersonics, CFD & Systems Integration</p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn">View Projects</a>
+          <a href="assets/Mikayla_Ehresmann-Singh_Resume.pdf" class="btn ghost" target="_blank">Download Resume</a>
+        </div>
+      </section>
+
+      <section id="projects" class="section projects">
+        <h2 class="section-title">Selected Projects</h2>
+
+        <div class="project-grid">
+          <!-- Project card template -->
+          <article class="project-card" id="proj-x15">
+            <h3>X-15 Subsystems Modernization</h3>
+            <p class="meta">Thermal, fuel, avionics & ECS upgrades — systems-level redesign.</p>
+            <ul>
+              <li><strong>Role:</strong> Systems Lead — requirements, integration, testing</li>
+              <li><strong>Tools:</strong> SolidWorks, MATLAB, Simulink, Python</li>
+            </ul>
+            <a class="more" href="#proj-x15-details">Read more →</a>
+          </article>
+
+          <article class="project-card" id="proj-bi-conic">
+            <h3>Hypersonic Bi-Conic Nose Pressure Analysis</h3>
+            <p class="meta">CFD and theoretical analysis of Cp distributions at Mach 7–10.</p>
+            <ul>
+              <li><strong>Role:</strong> CFD lead</li>
+              <li><strong>Tools:</strong> ANSYS/CFD, MATLAB</li>
+            </ul>
+            <a class="more" href="#proj-bi-conic-details">Read more →</a>
+          </article>
+
+          <article class="project-card" id="proj-broadsword">
+            <h3>BROADSWORD</h3>
+            <p class="meta">Basic Rocket on a Dynamic System with Operable Recovery Devices — integrated recovery and staging tests.</p>
+            <ul>
+              <li><strong>Role:</strong> Integration & test</li>
+              <li><strong>Tools:</strong> Test stands, data acquisition, SolidWorks</li>
+            </ul>
+            <a class="more" href="#proj-broadsword-details">Read more →</a>
+          </article>
+
+          <article class="project-card" id="proj-tf-cubesat">
+            <h3>TFAWS CubeSat Micro-Propulsion System</h3>
+            <p class="meta">CubeSat thruster design, CAD, ΔV budget, and TFAWS abstract submission.</p>
+            <ul>
+              <li><strong>Role:</strong> Concept & CAD</li>
+              <li><strong>Tools:</strong> Fusion360, Python, CAD exports</li>
+            </ul>
+            <a class="more" href="#proj-tf-cubesat-details">Read more →</a>
+          </article>
+
+          <article class="project-card" id="proj-x43">
+            <h3>X-43 Hypersonic Environment Analysis</h3>
+            <p class="meta">Analysis of flight environment and TPS requirements; shock/boundary layer focus.</p>
+            <ul>
+              <li><strong>Role:</strong> Environment analysis</li>
+              <li><strong>Tools:</strong> MATLAB, literature review</li>
+            </ul>
+            <a class="more" href="#proj-x43-details">Read more →</a>
+          </article>
+
+          <article class="project-card" id="proj-l1l2">
+            <h3>L1 & L2 Rocketry</h3>
+            <p class="meta">Amateur/high-power rocketry projects focusing on propulsion and recovery reliability.</p>
+            <ul>
+              <li><strong>Role:</strong> Lead designer & test engineer</li>
+              <li><strong>Tools:</strong> Test rigs, electronics, rocket motors</li>
+            </ul>
+            <a class="more" href="#proj-l1l2-details">Read more →</a>
+          </article>
+
+          <article class="project-card" id="proj-f1">
+            <h3>Methalox F-1 Engine Performance Analysis</h3>
+            <p class="meta">Thermodynamic comparison between RP-1/LOX and CH₄/LOX on historic F-1 geometry.</p>
+            <ul>
+              <li><strong>Role:</strong> Propulsion modeling</li>
+              <li><strong>Tools:</strong> Python, rocket performance models</li>
+            </ul>
+            <a class="more" href="#proj-f1-details">Read more →</a>
+          </article>
+
+          <article class="project-card" id="proj-cfdmatlab">
+            <h3>Aerospace CFD + MATLAB/Simulink Work</h3>
+            <p class="meta">Assorted CFD studies and control/analysis work for flight systems and propulsion.</p>
+            <ul>
+              <li><strong>Role:</strong> Analyst & coder</li>
+              <li><strong>Tools:</strong> MATLAB, Simulink, ANSYS</li>
+            </ul>
+            <a class="more" href="#proj-cfdmatlab-details">Read more →</a>
+          </article>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section id="about" class="section about">
+        <h2 class="section-title">About</h2>
+        <p>
+          I'm a Master of Science candidate in Aerospace Engineering (Spacecraft concentration) with hands-on experience in propulsion modeling,
+          propulsion system integration & testing, CFD, and systems engineering. I enjoy turning data into design decisions and building test-friendly hardware.
+        </p>
+      </section>
+
+      <section id="skills" class="section skills">
+        <h2 class="section-title">Skills</h2>
+        <div class="skill-list">
+          <div>Propulsion Modeling</div>
+          <div>CFD & Fluid Dynamics</div>
+          <div>Python / MATLAB</div>
+          <div>Simulink</div>
+          <div>CAD (SolidWorks / Fusion360)</div>
+          <div>Systems Integration & Testing</div>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact">
+        <h2 class="section-title">Contact</h2>
+        <p>Feel free to reach out — email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+      </section>
+
+      <footer class="footer">
+        <small>Built by Mikayla Ehresmann-Singh — <a href="https://mkesingh.github.io">mkesingh.github.io</a></small>
+      </footer>
+    </main>
+  </div>
+
+  <!-- Scripts -->
+  <script src="assets/script.js"></script>
 </body>
 </html>
